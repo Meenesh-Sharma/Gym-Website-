@@ -56,7 +56,7 @@ gym-website/
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
-git clone https://github.com/your-username/gym-website.git
+git clone https://github.com/Meenesh-Sharma/Gym-Website-
 
 cd gym-website
 2️⃣ Setup Backend
