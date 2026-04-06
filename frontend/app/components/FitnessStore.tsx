@@ -121,43 +121,51 @@ export default function FitnessStore() {
         {loading ? (
           <p className="text-center text-gray-400">Loading products...</p>
         ) : (
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="overflow-x-auto no-scrollbar">
+            <div className="flex gap-6 min-w-max px-2">
 
-            {products.map((product) => (
-              <Card
-                key={product._id}
-                className="bg-[#0F223A] border border-cyan-500/20 rounded-xl p-5 shadow-lg 
+              {products.map((product) => (
+                <Card
+                  key={product._id}
+                  className="bg-[#0F223A] border border-cyan-500/20 rounded-xl p-5 shadow-lg 
                 h-[260px] w-full max-w-[200px] mx-auto
                 flex flex-col justify-between 
                 hover:shadow-cyan-500/20 hover:scale-[1.03] 
                 transition duration-300"
-              >
-                <CardContent className="space-y-3 text-center">
+                >
+                  <CardContent className="flex flex-col h-full">
 
-                  <h4 className="text-lg font-semibold">
-                    {product.name}
-                  </h4>
+                    <div className="flex flex-col h-full text-center">
 
-                  <p className="text-gray-400 text-sm">
-                    {product.description}
-                  </p>
+                      <div className="space-y-2">
+                        <h4 className="text-lg font-semibold">
+                          {product.name}
+                        </h4>
 
-                  <p className="text-cyan-400 font-bold text-lg">
-                    ₹ {product.price}
-                  </p>
+                        <p className="text-gray-400 text-sm line-clamp-3">
+                          {product.description}
+                        </p>
+                      </div>
 
-                  <Button
-                    className="w-full rounded-full bg-cyan-400 text-black hover:bg-cyan-300 transition"
-                    onClick={() => handleBuyClick(product)}
-                  >
-                    Buy Now
-                  </Button>
+                      <div className="mt-auto space-y-3">
+                        <p className="text-cyan-400 font-bold text-lg">
+                          ₹ {product.price}
+                        </p>
 
-                </CardContent>
-              </Card>
-            ))}
+                        <Button
+                          className="w-full rounded-full bg-cyan-400 text-black hover:bg-cyan-300 transition"
+                          onClick={() => handleBuyClick(product)}
+                        >
+                          Buy Now
+                        </Button>
+                      </div>
 
-          </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+
+            </div></div>
         )}
 
         {/* ORDER FORM POPUP */}
