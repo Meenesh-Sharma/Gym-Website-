@@ -156,45 +156,46 @@ export default function Plans() {
           {plansLoading ? (
             <p className="text-center text-gray-400 mt-4">Loading plans...</p>
           ) : (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {plans.map((plan, idx) => (
-                <Card
-                  key={idx}
-                  className="bg-[#0F223A] p-4 text-center transition duration-300 hover:scale-[1.05] hover:shadow-xl hover:shadow-cyan-500/20 flex flex-col"
-                >
-                  <CardHeader>
-                    <h3 className="text-lg font-bold text-white">{plan.name}</h3>
-                    <p className="text-2xl font-extrabold text-cyan-400">
-                      ₹ {plan.price}/Monthly
-                    </p>
-                  </CardHeader>
+            <div className="overflow-x-auto no-scrollbar">
+              <div className="flex gap-6 min-w-max px-2">
+                {plans.map((plan, idx) => (
+                  <Card
+                    key={idx}
+                    className="bg-[#0F223A] p-4 text-center transition duration-300 hover:scale-[1.05] hover:shadow-xl hover:shadow-cyan-500/20 flex flex-col w-full max-w-[280px] flex-shrink-0"
+                  >
+                    <CardHeader>
+                      <h3 className="text-lg font-bold text-white">{plan.name}</h3>
+                      <p className="text-2xl font-extrabold text-cyan-400">
+                        ₹ {plan.price}/Monthly
+                      </p>
+                    </CardHeader>
 
-                  <CardContent className="text-left space-y-2 flex-1">
-                    {plan.features?.map((f: string, i: number) => (
-                      <div key={i} className="flex gap-2 items-center text-sm">
-                        <Check className="text-cyan-400 w-4 h-4 flex-shrink-0" />
-                        <span>{f}</span>
-                      </div>
-                    ))}
-                  </CardContent>
+                    <CardContent className="text-left space-y-2 flex-1">
+                      {plan.features?.map((f: string, i: number) => (
+                        <div key={i} className="flex gap-2 items-center text-sm">
+                          <Check className="text-cyan-400 w-4 h-4 flex-shrink-0" />
+                          <span>{f}</span>
+                        </div>
+                      ))}
+                    </CardContent>
 
-                  <CardFooter className="mt-auto">
-                    {!subscriptionLoading && (
-                      <Button
-                        disabled={hasActiveSubscription}
-                        className={`w-full ${hasActiveSubscription
+                    <CardFooter className="mt-auto">
+                      {!subscriptionLoading && (
+                        <Button
+                          disabled={hasActiveSubscription}
+                          className={`w-full ${hasActiveSubscription
                             ? "bg-gray-600 cursor-not-allowed"
                             : "bg-cyan-400 text-black hover:bg-cyan-300"
-                          }`}
-                        onClick={() => handleSubscribeClick(plan)}
-                      >
-                        {hasActiveSubscription ? "Plan Active" : "Get Started"}
-                      </Button>
-                    )}
-                  </CardFooter>
-                </Card>
-              ))}
-            </div>
+                            }`}
+                          onClick={() => handleSubscribeClick(plan)}
+                        >
+                          {hasActiveSubscription ? "Plan Active" : "Get Started"}
+                        </Button>
+                      )}
+                    </CardFooter>
+                  </Card>
+                ))}
+              </div></div>
           )}
         </div>
       </section>
