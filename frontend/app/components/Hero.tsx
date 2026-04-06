@@ -49,7 +49,7 @@ export function HomeHero() {
             </h1>
 
             <p className="text-sm sm:text-base text-gray-300 max-w-lg mx-auto md:mx-0">
-              Join ZYM, where state-of-the-art facilities meet personalized
+              Join Aryagym, where state-of-the-art facilities meet personalized
               coaching to help you crush your fitness goals. Your prime physique
               awaits.
             </p>

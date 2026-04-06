@@ -68,7 +68,7 @@ export default function Testimonials() {
           </h2>
 
           <p className="text-lg text-gray-300 leading-relaxed text-center">
-            Real stories from people who transformed their lives with ZYM.
+            Real stories from people who transformed their lives with Aryagym.
           </p>
         </div>
 

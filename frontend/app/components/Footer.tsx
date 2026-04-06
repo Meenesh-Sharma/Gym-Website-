@@ -16,11 +16,11 @@ export default function Footer() {
         {/* LEFT */}
         <div className="space-y-4">
           <div className="text-4xl font-extrabold tracking-widest uppercase">
-            <span className="text-cyan-400">Z</span>YM
+            <span className="text-cyan-400">Arya</span>GYM
           </div>
 
           <p className="text-sm text-gray-400">
-            &copy; 2024 ZYM Fitness Center. All rights reserved.
+            &copy; 2024 Aryagym Fitness Center. All rights reserved.
           </p>
         </div>
 

@@ -52,7 +52,7 @@ export default function About() {
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            About <span className="text-cyan-400">ZYM</span>
+            About <span className="text-cyan-400">Aryagym</span>
           </h2>
           <p className="text-gray-400 text-lg">
             We believe fitness is more than a routine — it's a lifestyle.

@@ -59,7 +59,7 @@ export default function Motivation() {
             <div className="flex items-center gap-3 text-cyan-400">
               <Quote className="w-6 h-6" />
               <span className="uppercase tracking-widest text-sm">
-                ZYM Philosophy
+                Aryagym Philosophy
               </span>
             </div>
 
@@ -83,7 +83,7 @@ export default function Motivation() {
                     <div className="relative space-y-3">
                       {/* Author */}
                       <span className="text-xs text-cyan-400 uppercase tracking-wider">
-                        {blog.author || "ZYM"}
+                        {blog.author || "Aryagym"}
                       </span>
 
                       {/* Title */}

@@ -47,13 +47,13 @@ export default function About() {
      <div className="text-center mb-6 md:mb-8 space-y-4">
        <h1 className="text-2xl sm:text-4xl lg:text-3xl font-extrabold leading-tight">
         Discover{" "}
-        <span className="text-cyan-400">Our ZYM</span> Philosophy
+        <span className="text-cyan-400">Our Aryagym</span> Philosophy
       </h1>
 
       <div className="max-w-5xl mx-auto space-y-10">
         {/* DESCRIPTION */}
         <p className="text-lg text-gray-300 leading-relaxed text-center">
-          At ZYM, we believe fitness is personal, which is why we've created a
+          At Aryagym, we believe fitness is personal, which is why we've created a
           supportive, inclusive environment for everyone. Our facility is designed
           to meet diverse needs, offering specialized zones and expert guidance.
         </p>

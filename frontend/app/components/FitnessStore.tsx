@@ -226,7 +226,7 @@ export default function FitnessStore() {
             </DialogHeader>
 
             <div className="py-4 text-gray-300 text-sm">
-              You can get your item from <span className="text-cyan-400 font-semibold">ZYM branch</span>
+              You can get your item from <span className="text-cyan-400 font-semibold">Aryagym branch</span>
             </div>
 
           </DialogContent>

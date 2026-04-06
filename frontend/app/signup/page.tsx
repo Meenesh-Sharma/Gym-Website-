@@ -155,7 +155,7 @@ export default function SignupPage() {
           <div className="hidden md:flex flex-1 bg-[#0A192F] p-10 flex-col justify-center items-center text-white rounded-r-3xl">
             <Dumbbell className="w-16 h-16 mb-4" />
             <h2 className="text-3xl font-bold mb-2 text-center">
-              Welcome to ZYM Fitness
+              Welcome to Aryagym Fitness
             </h2>
             <p className="text-center text-lg max-w-xs">
               Start your fitness journey today 🚀

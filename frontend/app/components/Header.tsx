@@ -51,7 +51,7 @@ export default function Header() {
 
         {/* Logo */}
         <div className="text-2xl font-bold tracking-wide text-white">
-          <span className="text-cyan-400">Z</span>YM
+          <span className="text-cyan-400">Arya</span>GYM
         </div>
 
         {/* Right Nav */}
